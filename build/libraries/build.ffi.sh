@@ -3,5 +3,5 @@ set -e
 
 cd ffi
 autoreconf -fiv
-$CONFIGURE --disable-shared --disable-docs CFLAGS="$FLAGS"
+$CONFIGURE --disable-static --disable-docs CFLAGS="$FLAGS"
 $MAKE install
